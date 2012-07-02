@@ -1,0 +1,30 @@
+{
+    "name": "selenium-webdriverjs",
+    "version": "0.0.1",
+    "description": "Original webdriverjs from seleniumhq SVN, compiled & packaged for npm",
+    "keywords": [
+	"selenium",
+	"webdriverjs",
+	"UI test"
+    ],
+    "author": {
+        "name": "Florian Sesser",
+        "email": "fs@it-agenten.com",
+        "web": "http://github.com/hacklschorsch/selenium-webdriverjs",
+        "twitter": "phL0w"
+    },
+    "license": "Apache",
+    "repository": {
+	"type": "git",
+	"url": "git@github.com:hacklschorsch/selenium-webdriverjs"
+    },
+    "directories": {
+	"selenium-src": "Original files incl. docs and licence texts"
+    },
+    "engines": {
+	"node": ">=0.6.0"
+    },
+    "scripts": {
+	"update": "svn export --force http://selenium.googlecode.com/svn/trunk/javascript/webdriver selenium-src/javascript/webdriver/"
+    }
+}
