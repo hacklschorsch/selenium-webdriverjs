@@ -1,6 +1,7 @@
 {
     "name": "selenium-webdriverjs",
     "version": "0.0.1",
+    "main": "webdriver.js",
     "description": "Original webdriverjs from seleniumhq SVN, compiled & packaged for npm",
     "keywords": [
 	"selenium",
@@ -10,8 +11,7 @@
     "author": {
         "name": "Florian Sesser",
         "email": "fs@it-agenten.com",
-        "web": "http://github.com/hacklschorsch/selenium-webdriverjs",
-        "twitter": "phL0w"
+        "web": "http://github.com/hacklschorsch/"
     },
     "license": "Apache",
     "repository": {
@@ -21,11 +21,8 @@
     "directories": {
 	"selenium-src": "Original files incl. docs and licence texts"
     },
-    "engines": {
-	"node": ">=0.6.0"
-    },
     "scripts": {
 	"test": "echo -n 'Quick syntax check using node: ' ; node webdriver.js && echo OK.",
-	"update": "svn export --force http://selenium.googlecode.com/svn/trunk/javascript/webdriver selenium-src/javascript/webdriver/"
+	"pull": "svn export --force http://selenium.googlecode.com/svn/trunk/javascript/webdriver selenium-src/javascript/webdriver/"
     }
 }
