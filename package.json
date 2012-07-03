@@ -25,6 +25,7 @@
 	"node": ">=0.6.0"
     },
     "scripts": {
+	"test": "echo -n 'Quick syntax check using node: ' ; node webdriver.js && echo OK.",
 	"update": "svn export --force http://selenium.googlecode.com/svn/trunk/javascript/webdriver selenium-src/javascript/webdriver/"
     }
 }
