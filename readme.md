@@ -8,21 +8,14 @@ Of the [different](https://github.com/admc/wd/) [available](https://github.com/C
 
 Have a look at the [wiki of WebdriverJS at the Google Code page](http://code.google.com/p/selenium/wiki/WebDriverJs).
 
-Use the selenium-webdriver like this:
+You can use the selenium-webdriver like this:
 
-    var assert = require("assert"),
-        webdriver = require("selenium-webdriverjs");
-    
-    var client = new webdriver.Builder()
-    //    usingServer('http://localhost:4444/wd/hub').
-        .withCapabilities({
-          'browserName': 'firefox',
-          'version': '',
-          'platform': 'ANY',
-          'javascriptEnabled': true
-        })
-        .build();
+    var webdriver = require('selenium-webdriverjs'),
+        client    = new webdriver.Builder().build();
 
+    client.get('http://github.com');
+
+For an example, see this little [UI testsuite](https://github.com/froh42/multi/blob/master/selenium/testsuite.js) where I used the [mocha test runner](http://visionmedia.github.com/mocha/) to run Selenium2 tests.
 
 ## Files
 
