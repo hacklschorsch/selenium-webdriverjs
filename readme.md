@@ -26,4 +26,4 @@ Anything relating to the fine code itself please see the [issue tracker at the G
 
 I put my own work (the packaging) into public domain (or whatever very free license is compatible to the licenses of the actual code).
 
-The code has different licenses attached: Apache, MIT, BSD, maybe more; I included the source files in hoping to comply with all the "keep this license text in your copy" regulations.
+The code I have packaged has different licenses attached: Apache, MIT, BSD, maybe more; I included the source files, hoping to comply with all the "keep this license text in your copy" regulations.
