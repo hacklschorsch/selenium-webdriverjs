@@ -8,6 +8,22 @@ Of the [different](https://github.com/admc/wd/) [available](https://github.com/C
 
 Have a look at the [wiki of WebdriverJS at the Google Code page](http://code.google.com/p/selenium/wiki/WebDriverJs).
 
+Use the selenium-webdriver like this:
+
+    var assert = require("assert"),
+        webdriver = require("selenium-webdriverjs");
+    
+    var client = new webdriver.Builder()
+    //    usingServer('http://localhost:4444/wd/hub').
+        .withCapabilities({
+          'browserName': 'firefox',
+          'version': '',
+          'platform': 'ANY',
+          'javascriptEnabled': true
+        })
+        .build();
+
+
 ## Files
 
 * webdriver.js
