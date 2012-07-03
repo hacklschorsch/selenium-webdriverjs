@@ -1,6 +1,6 @@
 # selenium-webdriverjs
 
-This is an [npm](http://npmjs.org/) package of a JavaScript binding for Selenium2 (AKA. WebDriver) from [SeleniumHQ](http://seleniumhq.org/) (see http://code.google.com/p/selenium/wiki/WebDriverJs).
+This is an [npm](http://npmjs.org/) package of a JavaScript binding for [Selenium2 (AKA. WebDriver)](http://seleniumhq.org/projects/webdriver/) from [SeleniumHQ](http://seleniumhq.org/) (see http://code.google.com/p/selenium/wiki/WebDriverJs).
 
 Of the [different](https://github.com/admc/wd/) [available](https://github.com/Camme/webdriverjs/) [options](https://github.com/LearnBoost/soda) to drive Selenium2 from node.js I liked that adapter the most. Unfortunately, there was no npm package for it. This is what I am trying to solve.
 
@@ -8,14 +8,14 @@ Of the [different](https://github.com/admc/wd/) [available](https://github.com/C
 
 Have a look at the [wiki of WebdriverJS at the Google Code page](http://code.google.com/p/selenium/wiki/WebDriverJs).
 
-You can use the selenium-webdriver like this:
+You can use selenium-webdriver like this:
 
     var webdriver = require('selenium-webdriverjs'),
         client    = new webdriver.Builder().build();
 
     client.get('http://github.com');
 
-For an example, see this little [UI testsuite](https://github.com/froh42/multi/blob/master/selenium/testsuite.js) where I used the [mocha test runner](http://visionmedia.github.com/mocha/) to run Selenium2 tests.
+For an example, see this little [UI testsuite](https://github.com/froh42/multi/blob/master/selenium/testsuite.js) where I used the [mocha test runner](http://visionmedia.github.com/mocha/) to run [Selenium2](http://seleniumhq.org/projects/webdriver/) tests.
 
 ## Files
 
