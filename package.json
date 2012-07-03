@@ -1,8 +1,8 @@
 {
     "name": "selenium-webdriverjs",
-    "version": "0.0.1",
+    "version": "0.0.1-r17314",
     "main": "webdriver.js",
-    "description": "Original webdriverjs from seleniumhq SVN, compiled & packaged for npm",
+    "description": "Webdriverjs from seleniumhq SVN, compiled & packaged for npm",
     "keywords": [
 	"selenium",
 	"webdriverjs",
@@ -17,9 +17,6 @@
     "repository": {
 	"type": "git",
 	"url": "git@github.com:hacklschorsch/selenium-webdriverjs"
-    },
-    "directories": {
-	"selenium-src": "Original files incl. docs and licence texts"
     },
     "scripts": {
 	"test": "echo -n 'Quick syntax check using node: ' ; node webdriver.js && echo OK.",

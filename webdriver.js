@@ -2019,13 +2019,13 @@ webdriver.promise.rejected = function(a) {
 webdriver.promise.checkedNodeCall = function(a) {
   var b = new webdriver.promise.Deferred(function() {
     throw Error("This Deferred may not be cancelled");
-  }), c = !1;
+  });
   try {
-    a(function(a, d) {
-      c || (c = !0, a ? b.reject(a) : b.resolve(d))
+    a(function(a, c) {
+      b.isPending() && (a ? b.reject(a) : b.resolve(c))
     })
-  }catch(d) {
-    c || (c = !0, b.reject(d))
+  }catch(c) {
+    b.isPending() && b.reject(c)
   }
   return b.promise
 };
@@ -2063,27 +2063,22 @@ webdriver.promise.fullyResolveKeys_ = function(a, b, c) {
   if(!b) {
     return webdriver.promise.resolved(a)
   }
-  var d = 0, e = !1, f = !1, g = new webdriver.promise.Deferred(function() {
-    f = !0
-  });
-  c(a, function(c, i) {
-    function j() {
-      ++d == b && !f && g.resolve(a)
+  var d = 0, e = new webdriver.promise.Deferred;
+  c(a, function(c, g) {
+    function h() {
+      ++d == b && e.isPending() && e.resolve(a)
     }
-    if(!f) {
-      var k = goog.typeOf(c);
-      if("array" != k && "object" != k) {
-        return j()
-      }
-      webdriver.promise.fullyResolved(c).then(function(b) {
-        a[i] = b;
-        j()
-      }, function(a) {
-        !e && !f && (e = !0, g.reject(a))
-      })
+    var i = goog.typeOf(c);
+    if("array" != i && "object" != i) {
+      return h()
     }
+    webdriver.promise.fullyResolved(c).then(function(b) {
+      e.isPending() && (a[g] = b, h())
+    }, function(a) {
+      e.isPending() && e.reject(a)
+    })
   });
-  return g.promise
+  return e.promise
 };
 webdriver.promise.Application = function() {
   webdriver.EventEmitter.call(this);
