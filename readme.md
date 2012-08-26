@@ -24,6 +24,8 @@ See this small [UI testsuite](https://github.com/froh42/multi/blob/master/seleni
 * selenium-src/
   * This directory contains all the sources for the compiled file above.
   * It's included because of the license texts (most of which have to be included when re-distributing) and documentation (which is stripped in the compiled version above, but can be a handy reference).
+* update.sh
+  * Updates the package: Pulls SeleniumHQ SVN trunk, compiles webdriver.js and updates the package.json version string.
 
 ## Issues
 
