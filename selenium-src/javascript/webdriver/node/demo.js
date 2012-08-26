@@ -14,7 +14,8 @@
 
 var url = require('url');
 
-var webdriver = require('../../../build/javascript/webdriver/webdriver'),
+var webdriver = // require('../../../build/javascript/webdriver/webdriver'),
+		require('/home/flo/workshop-softwarearchitektur.de/GIT/hacklschorsch/selenium-webdriverjs/webdriver');
     optparse = require('./optparse');
 
 var app = webdriver.promise.Application.getInstance();
@@ -116,7 +117,7 @@ if (browser) {
   log('--------------------------------------------------------------------\n');
   log('');
 
-  var repl = require('repl').start();
+  var repl = require('repl').start({});
 
   repl.context.webdriver = webdriver;
   repl.context.setDefaultUrl = setDefaultUrl;

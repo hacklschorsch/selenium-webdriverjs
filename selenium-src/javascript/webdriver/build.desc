@@ -44,8 +44,7 @@ js_binary(name = "webdriver",
     "*.js",
     "http/*.js",
     "node/node.js",
-    "exports/deployable.js",
-    "exports/standard.js",
+    "exports/exports.js",
   ],
   deps = [
     "//javascript/atoms:error_lib",
@@ -75,7 +74,7 @@ js_binary(name = "webdriver",
     "--jscomp_error=unknownDefines",
     "--jscomp_error=uselessCode",
     "--jscomp_error=visibility",
-    "--output_wrapper='(function(){%output%;for(var key in webdriver)this[key]=webdriver[key];delete this.webdriver;}).call(typeof exports==typeof {}&&exports===this?exports:this.webdriver=this.webdriver||{})'",
+    "--output_wrapper='(function(exports){%output%})(typeof exports===typeof {}&&exports===this?exports:this.webdriver=this.webdriver||{})'",
     "--third_party=false",
   ])
 
@@ -84,29 +83,8 @@ js_test(name = "test",
     "test/**/*.js",
     "test/**/*_test.html",
   ],
-  path = "/javascript/webdriver/test",
   deps = [
     ":test_lib",
     "//java/client/test/org/openqa/selenium/javascript",
     "//java/server/test/org/openqa/selenium:server-with-tests:uber",
-  ])
-
-# Tests not run on Opera; requires Opera 12.
-# TODO(jleyba): Update rule when Opera 12 is the stable release for Opera.
-webdriverjs_test(name = "test_e2e",
-  srcs = [
-    "test_e2e/*.js",
-    "test_e2e/*_test.html"
-  ],
-  test_dir = "test_e2e",
-  path = "/javascript/webdriver/test_e2e",
-  deps = [
-    ":test_lib",
-    "//java/client/test/org/openqa/selenium/javascript:jsapi",
-    "//java/server/test/org/openqa/selenium:server-with-tests:uber",
-  ],
-  browsers = [
-    "chrome",
-    "ff",
-    "ie",
   ])

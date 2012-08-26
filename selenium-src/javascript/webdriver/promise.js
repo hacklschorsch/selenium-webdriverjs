@@ -361,7 +361,7 @@ webdriver.promise.Deferred = function(opt_canceller) {
             goog.partial(notifyAll, webdriver.promise.Deferred.State.REJECTED));
         return;
       }
-      webdriver.promise.when(opt_value, resolve, reject);
+      webdriver.promise.asap(opt_value, resolve, reject);
     } else {
       notifyAll(webdriver.promise.Deferred.State.RESOLVED, opt_value);
     }
@@ -381,7 +381,7 @@ webdriver.promise.Deferred = function(opt_canceller) {
             goog.partial(notifyAll, webdriver.promise.Deferred.State.REJECTED));
         return;
       }
-      webdriver.promise.when(opt_error, reject, reject);
+      webdriver.promise.asap(opt_error, reject, reject);
     } else {
       notifyAll(webdriver.promise.Deferred.State.REJECTED, opt_error);
     }
@@ -1629,5 +1629,9 @@ webdriver.promise.Application.Task.prototype.getDescription = function() {
 /** @override */
 webdriver.promise.Application.Task.prototype.toString = function() {
   var stack = this.snapshot_.getStacktrace();
-  return this.description_ + '\n  > ' + stack.split('\n').join('\n  > ');
+  var ret = this.description_;
+  if (stack) {
+    ret += '\n  > ' + stack.split('\n').join('\n  > ');
+  }
+  return ret;
 };

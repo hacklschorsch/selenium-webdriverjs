@@ -1,4 +1,4 @@
-(function(){var COMPILED = !0, goog = goog || {};
+(function(exports){var COMPILED = !0, goog = goog || {};
 goog.global = this;
 goog.DEBUG = !0;
 goog.LOCALE = "en";
@@ -957,18 +957,18 @@ webdriver.Command.prototype.getParameters = function() {
   return this.parameters_
 };
 webdriver.CommandName = {GET_SERVER_STATUS:"getStatus", NEW_SESSION:"newSession", GET_SESSIONS:"getSessions", DESCRIBE_SESSION:"getSessionCapabilities", CLOSE:"close", QUIT:"quit", GET_CURRENT_URL:"getCurrentUrl", GET:"get", GO_BACK:"goBack", GO_FORWARD:"goForward", REFRESH:"refresh", ADD_COOKIE:"addCookie", GET_COOKIE:"getCookie", GET_ALL_COOKIES:"getCookies", DELETE_COOKIE:"deleteCookie", DELETE_ALL_COOKIES:"deleteAllCookies", GET_ACTIVE_ELEMENT:"getActiveElement", FIND_ELEMENT:"findElement", FIND_ELEMENTS:"findElements", 
-FIND_CHILD_ELEMENT:"findChildElement", FIND_CHILD_ELEMENTS:"findChildElements", CLEAR_ELEMENT:"clearElement", CLICK_ELEMENT:"clickElement", SEND_KEYS_TO_ELEMENT:"sendKeysToElement", SUBMIT_ELEMENT:"submitElement", GET_CURRENT_WINDOW_HANDLE:"getCurrentWindowHandle", GET_WINDOW_HANDLES:"getWindowHandles", GET_WINDOW_POSITION:"getWindowPosition", SET_WINDOW_POSITION:"setWindowPosition", GET_WINDOW_SIZE:"getWindowSize", SET_WINDOW_SIZE:"setWindowSize", SWITCH_TO_WINDOW:"switchToWindow", SWITCH_TO_FRAME:"switchToFrame", 
-GET_PAGE_SOURCE:"getPageSource", GET_TITLE:"getTitle", EXECUTE_SCRIPT:"executeScript", EXECUTE_ASYNC_SCRIPT:"executeAsyncScript", GET_ELEMENT_TEXT:"getElementText", GET_ELEMENT_TAG_NAME:"getElementTagName", IS_ELEMENT_SELECTED:"isElementSelected", IS_ELEMENT_ENABLED:"isElementEnabled", IS_ELEMENT_DISPLAYED:"isElementDisplayed", GET_ELEMENT_LOCATION:"getElementLocation", GET_ELEMENT_LOCATION_IN_VIEW:"getElementLocationOnceScrolledIntoView", GET_ELEMENT_SIZE:"getElementSize", GET_ELEMENT_ATTRIBUTE:"getElementAttribute", 
-GET_ELEMENT_VALUE_OF_CSS_PROPERTY:"getElementValueOfCssProperty", ELEMENT_EQUALS:"elementEquals", SCREENSHOT:"screenshot", DIMISS_ALERT:"dimissAlert", IMPLICITLY_WAIT:"implicitlyWait", SET_SCRIPT_TIMEOUT:"setScriptTimeout", GET_ALERT:"getAlert", ACCEPT_ALERT:"acceptAlert", DISMISS_ALERT:"dismissAlert", GET_ALERT_TEXT:"getAlertText", SET_ALERT_VALUE:"setAlertValue", EXECUTE_SQL:"executeSQL", GET_LOCATION:"getLocation", SET_LOCATION:"setLocation", GET_APP_CACHE:"getAppCache", GET_APP_CACHE_STATUS:"getStatus", 
-CLEAR_APP_CACHE:"clearAppCache", IS_BROWSER_ONLINE:"isBrowserOnline", SET_BROWSER_ONLINE:"setBrowserOnline", GET_LOCAL_STORAGE_ITEM:"getLocalStorageItem", GET_LOCAL_STORAGE_KEYS:"getLocalStorageKeys", SET_LOCAL_STORAGE_ITEM:"setLocalStorageItem", REMOVE_LOCAL_STORAGE_ITEM:"removeLocalStorageItem", CLEAR_LOCAL_STORAGE:"clearLocalStorage", GET_LOCAL_STORAGE_SIZE:"getLocalStorageSize", GET_SESSION_STORAGE_ITEM:"getSessionStorageItem", GET_SESSION_STORAGE_KEYS:"getSessionStorageKey", SET_SESSION_STORAGE_ITEM:"setSessionStorageItem", 
-REMOVE_SESSION_STORAGE_ITEM:"removeSessionStorageItem", CLEAR_SESSION_STORAGE:"clearSessionStorage", GET_SESSION_STORAGE_SIZE:"getSessionStorageSize", SET_SCREEN_ORIENTATION:"setScreenOrientation", GET_SCREEN_ORIENTATION:"getScreenOrientation", CLICK:"mouseClick", DOUBLE_CLICK:"mouseDoubleClick", MOUSE_DOWN:"mouseDown", MOUSE_UP:"mouseUp", MOVE_TO:"mouseMove", SEND_KEYS_TO_ACTIVE_ELEMENT:"sendKeysToActiveElement", TOUCH_SINGLE_TAP:"touchSingleTap", TOUCH_DOWN:"touchDown", TOUCH_UP:"touchUp", TOUCH_MOVE:"touchMove", 
-TOUCH_SCROLL:"touchScroll", TOUCH_DOUBLE_TAP:"touchDoubleTap", TOUCH_LONG_PRESS:"touchLongPress", TOUCH_FLICK:"touchFlick", GET_LOGS:"getLogs"};
+FIND_CHILD_ELEMENT:"findChildElement", FIND_CHILD_ELEMENTS:"findChildElements", CLEAR_ELEMENT:"clearElement", CLICK_ELEMENT:"clickElement", SEND_KEYS_TO_ELEMENT:"sendKeysToElement", SUBMIT_ELEMENT:"submitElement", GET_CURRENT_WINDOW_HANDLE:"getCurrentWindowHandle", GET_WINDOW_HANDLES:"getWindowHandles", GET_WINDOW_POSITION:"getWindowPosition", SET_WINDOW_POSITION:"setWindowPosition", GET_WINDOW_SIZE:"getWindowSize", SET_WINDOW_SIZE:"setWindowSize", MAXIMIZE_WINDOW:"maximizeWindow", SWITCH_TO_WINDOW:"switchToWindow", 
+SWITCH_TO_FRAME:"switchToFrame", GET_PAGE_SOURCE:"getPageSource", GET_TITLE:"getTitle", EXECUTE_SCRIPT:"executeScript", EXECUTE_ASYNC_SCRIPT:"executeAsyncScript", GET_ELEMENT_TEXT:"getElementText", GET_ELEMENT_TAG_NAME:"getElementTagName", IS_ELEMENT_SELECTED:"isElementSelected", IS_ELEMENT_ENABLED:"isElementEnabled", IS_ELEMENT_DISPLAYED:"isElementDisplayed", GET_ELEMENT_LOCATION:"getElementLocation", GET_ELEMENT_LOCATION_IN_VIEW:"getElementLocationOnceScrolledIntoView", GET_ELEMENT_SIZE:"getElementSize", 
+GET_ELEMENT_ATTRIBUTE:"getElementAttribute", GET_ELEMENT_VALUE_OF_CSS_PROPERTY:"getElementValueOfCssProperty", ELEMENT_EQUALS:"elementEquals", SCREENSHOT:"screenshot", DIMISS_ALERT:"dimissAlert", IMPLICITLY_WAIT:"implicitlyWait", SET_SCRIPT_TIMEOUT:"setScriptTimeout", GET_ALERT:"getAlert", ACCEPT_ALERT:"acceptAlert", DISMISS_ALERT:"dismissAlert", GET_ALERT_TEXT:"getAlertText", SET_ALERT_VALUE:"setAlertValue", EXECUTE_SQL:"executeSQL", GET_LOCATION:"getLocation", SET_LOCATION:"setLocation", GET_APP_CACHE:"getAppCache", 
+GET_APP_CACHE_STATUS:"getStatus", CLEAR_APP_CACHE:"clearAppCache", IS_BROWSER_ONLINE:"isBrowserOnline", SET_BROWSER_ONLINE:"setBrowserOnline", GET_LOCAL_STORAGE_ITEM:"getLocalStorageItem", GET_LOCAL_STORAGE_KEYS:"getLocalStorageKeys", SET_LOCAL_STORAGE_ITEM:"setLocalStorageItem", REMOVE_LOCAL_STORAGE_ITEM:"removeLocalStorageItem", CLEAR_LOCAL_STORAGE:"clearLocalStorage", GET_LOCAL_STORAGE_SIZE:"getLocalStorageSize", GET_SESSION_STORAGE_ITEM:"getSessionStorageItem", GET_SESSION_STORAGE_KEYS:"getSessionStorageKey", 
+SET_SESSION_STORAGE_ITEM:"setSessionStorageItem", REMOVE_SESSION_STORAGE_ITEM:"removeSessionStorageItem", CLEAR_SESSION_STORAGE:"clearSessionStorage", GET_SESSION_STORAGE_SIZE:"getSessionStorageSize", SET_SCREEN_ORIENTATION:"setScreenOrientation", GET_SCREEN_ORIENTATION:"getScreenOrientation", CLICK:"mouseClick", DOUBLE_CLICK:"mouseDoubleClick", MOUSE_DOWN:"mouseDown", MOUSE_UP:"mouseUp", MOVE_TO:"mouseMove", SEND_KEYS_TO_ACTIVE_ELEMENT:"sendKeysToActiveElement", TOUCH_SINGLE_TAP:"touchSingleTap", 
+TOUCH_DOWN:"touchDown", TOUCH_UP:"touchUp", TOUCH_MOVE:"touchMove", TOUCH_SCROLL:"touchScroll", TOUCH_DOUBLE_TAP:"touchDoubleTap", TOUCH_LONG_PRESS:"touchLongPress", TOUCH_FLICK:"touchFlick", GET_LOGS:"getLogs"};
 webdriver.CommandExecutor = function() {
 };
 webdriver.Key = {NULL:"\ue000", CANCEL:"\ue001", HELP:"\ue002", BACK_SPACE:"\ue003", TAB:"\ue004", CLEAR:"\ue005", RETURN:"\ue006", ENTER:"\ue007", SHIFT:"\ue008", CONTROL:"\ue009", ALT:"\ue00a", PAUSE:"\ue00b", ESCAPE:"\ue00c", SPACE:"\ue00d", PAGE_UP:"\ue00e", PAGE_DOWN:"\ue00f", END:"\ue010", HOME:"\ue011", ARROW_LEFT:"\ue012", LEFT:"\ue012", ARROW_UP:"\ue013", UP:"\ue013", ARROW_RIGHT:"\ue014", RIGHT:"\ue014", ARROW_DOWN:"\ue015", DOWN:"\ue015", INSERT:"\ue016", DELETE:"\ue017", SEMICOLON:"\ue018", 
 EQUALS:"\ue019", NUMPAD0:"\ue01a", NUMPAD1:"\ue01b", NUMPAD2:"\ue01c", NUMPAD3:"\ue01d", NUMPAD4:"\ue01e", NUMPAD5:"\ue01f", NUMPAD6:"\ue020", NUMPAD7:"\ue021", NUMPAD8:"\ue022", NUMPAD9:"\ue023", MULTIPLY:"\ue024", ADD:"\ue025", SEPARATOR:"\ue026", SUBTRACT:"\ue027", DECIMAL:"\ue028", DIVIDE:"\ue029", F1:"\ue031", F2:"\ue032", F3:"\ue033", F4:"\ue034", F5:"\ue035", F6:"\ue036", F7:"\ue037", F8:"\ue038", F9:"\ue039", F10:"\ue03a", F11:"\ue03b", F12:"\ue03c", COMMAND:"\ue03d", META:"\ue03d"};
-var bot = {ErrorCode:{SUCCESS:0, NO_SUCH_ELEMENT:7, NO_SUCH_FRAME:8, UNKNOWN_COMMAND:9, UNSUPPORTED_OPERATION:9, STALE_ELEMENT_REFERENCE:10, ELEMENT_NOT_VISIBLE:11, INVALID_ELEMENT_STATE:12, UNKNOWN_ERROR:13, ELEMENT_NOT_SELECTABLE:15, JAVASCRIPT_ERROR:17, XPATH_LOOKUP_ERROR:19, TIMEOUT:21, NO_SUCH_WINDOW:23, INVALID_COOKIE_DOMAIN:24, UNABLE_TO_SET_COOKIE:25, MODAL_DIALOG_OPENED:26, NO_MODAL_DIALOG_OPEN:27, SCRIPT_TIMEOUT:28, INVALID_ELEMENT_COORDINATES:29, INVALID_SELECTOR_ERROR:32, SQL_DATABASE_ERROR:33, 
-MOVE_TARGET_OUT_OF_BOUNDS:34, IME_ENGINE_ACTIVATION_FAILED:35, IME_NOT_AVAILABLE:36}, Error:function(a, b) {
+var bot = {ErrorCode:{SUCCESS:0, NO_SUCH_ELEMENT:7, NO_SUCH_FRAME:8, UNKNOWN_COMMAND:9, UNSUPPORTED_OPERATION:9, STALE_ELEMENT_REFERENCE:10, ELEMENT_NOT_VISIBLE:11, INVALID_ELEMENT_STATE:12, UNKNOWN_ERROR:13, ELEMENT_NOT_SELECTABLE:15, JAVASCRIPT_ERROR:17, XPATH_LOOKUP_ERROR:19, TIMEOUT:21, NO_SUCH_WINDOW:23, INVALID_COOKIE_DOMAIN:24, UNABLE_TO_SET_COOKIE:25, MODAL_DIALOG_OPENED:26, NO_MODAL_DIALOG_OPEN:27, SCRIPT_TIMEOUT:28, INVALID_ELEMENT_COORDINATES:29, IME_NOT_AVAILABLE:30, IME_ENGINE_ACTIVATION_FAILED:31, 
+INVALID_SELECTOR_ERROR:32, SESSION_NOT_CREATED:33, MOVE_TARGET_OUT_OF_BOUNDS:34, SQL_DATABASE_ERROR:35}, Error:function(a, b) {
   this.code = a;
   this.message = b || "";
   this.name = bot.Error.NAMES_[a] || bot.Error.NAMES_[bot.ErrorCode.UNKNOWN_ERROR];
@@ -1956,10 +1956,10 @@ webdriver.promise.Deferred = function(a) {
     b ? (b = webdriver.promise.Application.getInstance().runInNewFrame_(goog.partial(b, k)), webdriver.promise.asap(b, a.deferred.resolve, a.deferred.reject)) : j == webdriver.promise.Deferred.State.REJECTED ? a.deferred.reject(k) : a.deferred.resolve(k)
   }
   function e(a) {
-    webdriver.promise.isPromise(a) && a !== m ? a instanceof webdriver.promise.Deferred ? a.then(goog.partial(c, webdriver.promise.Deferred.State.RESOLVED), goog.partial(c, webdriver.promise.Deferred.State.REJECTED)) : webdriver.promise.when(a, e, f) : c(webdriver.promise.Deferred.State.RESOLVED, a)
+    webdriver.promise.isPromise(a) && a !== m ? a instanceof webdriver.promise.Deferred ? a.then(goog.partial(c, webdriver.promise.Deferred.State.RESOLVED), goog.partial(c, webdriver.promise.Deferred.State.REJECTED)) : webdriver.promise.asap(a, e, f) : c(webdriver.promise.Deferred.State.RESOLVED, a)
   }
   function f(a) {
-    webdriver.promise.isPromise(a) && a !== m ? a instanceof webdriver.promise.Deferred ? a.then(goog.partial(c, webdriver.promise.Deferred.State.REJECTED), goog.partial(c, webdriver.promise.Deferred.State.REJECTED)) : webdriver.promise.when(a, f, f) : c(webdriver.promise.Deferred.State.REJECTED, a)
+    webdriver.promise.isPromise(a) && a !== m ? a instanceof webdriver.promise.Deferred ? a.then(goog.partial(c, webdriver.promise.Deferred.State.REJECTED), goog.partial(c, webdriver.promise.Deferred.State.REJECTED)) : webdriver.promise.asap(a, f, f) : c(webdriver.promise.Deferred.State.REJECTED, a)
   }
   function g(c) {
     if(!b()) {
@@ -2347,7 +2347,9 @@ webdriver.promise.Application.Task.prototype.getDescription = function() {
   return this.description_
 };
 webdriver.promise.Application.Task.prototype.toString = function() {
-  return this.description_ + "\n  > " + this.snapshot_.getStacktrace().split("\n").join("\n  > ")
+  var a = this.snapshot_.getStacktrace(), b = this.description_;
+  a && (b += "\n  > " + a.split("\n").join("\n  > "));
+  return b
 };
 webdriver.WebDriver = function(a, b) {
   this.session_ = a;
@@ -4335,242 +4337,23 @@ webdriver.http.XhrClient.prototype.send = function(a, b) {
     b(f)
   }
 };
-goog.exportSymbol("Builder", webdriver.Builder);
-goog.exportProperty(webdriver.Builder, "SESSION_ID_ENV", webdriver.Builder.SESSION_ID_ENV);
-goog.exportProperty(webdriver.Builder, "SERVER_URL_ENV", webdriver.Builder.SERVER_URL_ENV);
-goog.exportProperty(webdriver.Builder, "DEFAULT_SERVER_URL", webdriver.Builder.DEFAULT_SERVER_URL);
-goog.exportProperty(webdriver.Builder.prototype, "usingServer", webdriver.Builder.prototype.usingServer);
-goog.exportProperty(webdriver.Builder.prototype, "usingSession", webdriver.Builder.prototype.usingSession);
-goog.exportProperty(webdriver.Builder.prototype, "withCapabilities", webdriver.Builder.prototype.withCapabilities);
-goog.exportProperty(webdriver.Builder.prototype, "build", webdriver.Builder.prototype.build);
-goog.exportSymbol("Command", webdriver.Command);
-goog.exportProperty(webdriver.Command.prototype, "getName", webdriver.Command.prototype.getName);
-goog.exportProperty(webdriver.Command.prototype, "setParameter", webdriver.Command.prototype.setParameter);
-goog.exportProperty(webdriver.Command.prototype, "setParameters", webdriver.Command.prototype.setParameters);
-goog.exportProperty(webdriver.Command.prototype, "getParameter", webdriver.Command.prototype.getParameter);
-goog.exportProperty(webdriver.Command.prototype, "getParameters", webdriver.Command.prototype.getParameters);
-goog.exportSymbol("CommandName.GET_SERVER_STATUS", webdriver.CommandName.GET_SERVER_STATUS);
-goog.exportSymbol("CommandName.NEW_SESSION", webdriver.CommandName.NEW_SESSION);
-goog.exportSymbol("CommandName.GET_SESSIONS", webdriver.CommandName.GET_SESSIONS);
-goog.exportSymbol("CommandName.DESCRIBE_SESSION", webdriver.CommandName.DESCRIBE_SESSION);
-goog.exportSymbol("CommandName.CLOSE", webdriver.CommandName.CLOSE);
-goog.exportSymbol("CommandName.QUIT", webdriver.CommandName.QUIT);
-goog.exportSymbol("CommandName.GET_CURRENT_URL", webdriver.CommandName.GET_CURRENT_URL);
-goog.exportSymbol("CommandName.GET", webdriver.CommandName.GET);
-goog.exportSymbol("CommandName.GO_BACK", webdriver.CommandName.GO_BACK);
-goog.exportSymbol("CommandName.GO_FORWARD", webdriver.CommandName.GO_FORWARD);
-goog.exportSymbol("CommandName.REFRESH", webdriver.CommandName.REFRESH);
-goog.exportSymbol("CommandName.ADD_COOKIE", webdriver.CommandName.ADD_COOKIE);
-goog.exportSymbol("CommandName.GET_COOKIE", webdriver.CommandName.GET_COOKIE);
-goog.exportSymbol("CommandName.GET_ALL_COOKIES", webdriver.CommandName.GET_ALL_COOKIES);
-goog.exportSymbol("CommandName.DELETE_COOKIE", webdriver.CommandName.DELETE_COOKIE);
-goog.exportSymbol("CommandName.DELETE_ALL_COOKIES", webdriver.CommandName.DELETE_ALL_COOKIES);
-goog.exportSymbol("CommandName.GET_ACTIVE_ELEMENT", webdriver.CommandName.GET_ACTIVE_ELEMENT);
-goog.exportSymbol("CommandName.FIND_ELEMENT", webdriver.CommandName.FIND_ELEMENT);
-goog.exportSymbol("CommandName.FIND_ELEMENTS", webdriver.CommandName.FIND_ELEMENTS);
-goog.exportSymbol("CommandName.FIND_CHILD_ELEMENT", webdriver.CommandName.FIND_CHILD_ELEMENT);
-goog.exportSymbol("CommandName.FIND_CHILD_ELEMENTS", webdriver.CommandName.FIND_CHILD_ELEMENTS);
-goog.exportSymbol("CommandName.CLEAR_ELEMENT", webdriver.CommandName.CLEAR_ELEMENT);
-goog.exportSymbol("CommandName.CLICK_ELEMENT", webdriver.CommandName.CLICK_ELEMENT);
-goog.exportSymbol("CommandName.SEND_KEYS_TO_ELEMENT", webdriver.CommandName.SEND_KEYS_TO_ELEMENT);
-goog.exportSymbol("CommandName.SUBMIT_ELEMENT", webdriver.CommandName.SUBMIT_ELEMENT);
-goog.exportSymbol("CommandName.GET_CURRENT_WINDOW_HANDLE", webdriver.CommandName.GET_CURRENT_WINDOW_HANDLE);
-goog.exportSymbol("CommandName.GET_WINDOW_HANDLES", webdriver.CommandName.GET_WINDOW_HANDLES);
-goog.exportSymbol("CommandName.SWITCH_TO_WINDOW", webdriver.CommandName.SWITCH_TO_WINDOW);
-goog.exportSymbol("CommandName.SWITCH_TO_FRAME", webdriver.CommandName.SWITCH_TO_FRAME);
-goog.exportSymbol("CommandName.GET_PAGE_SOURCE", webdriver.CommandName.GET_PAGE_SOURCE);
-goog.exportSymbol("CommandName.GET_TITLE", webdriver.CommandName.GET_TITLE);
-goog.exportSymbol("CommandName.EXECUTE_SCRIPT", webdriver.CommandName.EXECUTE_SCRIPT);
-goog.exportSymbol("CommandName.EXECUTE_ASYNC_SCRIPT", webdriver.CommandName.EXECUTE_ASYNC_SCRIPT);
-goog.exportSymbol("CommandName.GET_ELEMENT_TEXT", webdriver.CommandName.GET_ELEMENT_TEXT);
-goog.exportSymbol("CommandName.GET_ELEMENT_TAG_NAME", webdriver.CommandName.GET_ELEMENT_TAG_NAME);
-goog.exportSymbol("CommandName.IS_ELEMENT_SELECTED", webdriver.CommandName.IS_ELEMENT_SELECTED);
-goog.exportSymbol("CommandName.IS_ELEMENT_ENABLED", webdriver.CommandName.IS_ELEMENT_ENABLED);
-goog.exportSymbol("CommandName.IS_ELEMENT_DISPLAYED", webdriver.CommandName.IS_ELEMENT_DISPLAYED);
-goog.exportSymbol("CommandName.GET_ELEMENT_LOCATION", webdriver.CommandName.GET_ELEMENT_LOCATION);
-goog.exportSymbol("CommandName.GET_ELEMENT_SIZE", webdriver.CommandName.GET_ELEMENT_SIZE);
-goog.exportSymbol("CommandName.GET_ELEMENT_ATTRIBUTE", webdriver.CommandName.GET_ELEMENT_ATTRIBUTE);
-goog.exportSymbol("CommandName.GET_ELEMENT_VALUE_OF_CSS_PROPERTY", webdriver.CommandName.GET_ELEMENT_VALUE_OF_CSS_PROPERTY);
-goog.exportSymbol("CommandName.ELEMENT_EQUALS", webdriver.CommandName.ELEMENT_EQUALS);
-goog.exportSymbol("CommandName.SCREENSHOT", webdriver.CommandName.SCREENSHOT);
-goog.exportSymbol("CommandName.DIMISS_ALERT", webdriver.CommandName.DIMISS_ALERT);
-goog.exportSymbol("CommandName.IMPLICITLY_WAIT", webdriver.CommandName.IMPLICITLY_WAIT);
-goog.exportSymbol("CommandName.SET_SCRIPT_TIMEOUT", webdriver.CommandName.SET_SCRIPT_TIMEOUT);
-goog.exportSymbol("CommandName.GET_ALERT", webdriver.CommandName.GET_ALERT);
-goog.exportSymbol("CommandName.ACCEPT_ALERT", webdriver.CommandName.ACCEPT_ALERT);
-goog.exportSymbol("CommandName.DISMISS_ALERT", webdriver.CommandName.DISMISS_ALERT);
-goog.exportSymbol("CommandName.GET_ALERT_TEXT", webdriver.CommandName.GET_ALERT_TEXT);
-goog.exportSymbol("CommandName.SET_ALERT_VALUE", webdriver.CommandName.SET_ALERT_VALUE);
-goog.exportSymbol("CommandName.GET_WINDOW_POSITION", webdriver.CommandName.GET_WINDOW_POSITION);
-goog.exportSymbol("CommandName.SET_WINDOW_POSITION", webdriver.CommandName.SET_WINDOW_POSITION);
-goog.exportSymbol("CommandName.GET_WINDOW_SIZE", webdriver.CommandName.GET_WINDOW_SIZE);
-goog.exportSymbol("CommandName.SET_WINDOW_SIZE", webdriver.CommandName.SET_WINDOW_SIZE);
-goog.exportSymbol("EventEmitter", webdriver.EventEmitter);
-goog.exportProperty(webdriver.EventEmitter.prototype, "emit", webdriver.EventEmitter.prototype.emit);
-goog.exportProperty(webdriver.EventEmitter.prototype, "addListener", webdriver.EventEmitter.prototype.addListener);
-goog.exportProperty(webdriver.EventEmitter.prototype, "once", webdriver.EventEmitter.prototype.once);
-goog.exportProperty(webdriver.EventEmitter.prototype, "on", webdriver.EventEmitter.prototype.on);
-goog.exportProperty(webdriver.EventEmitter.prototype, "removeListener", webdriver.EventEmitter.prototype.removeListener);
-goog.exportProperty(webdriver.EventEmitter.prototype, "removeAllListeners", webdriver.EventEmitter.prototype.removeAllListeners);
-goog.exportSymbol("Key.NULL", webdriver.Key.NULL);
-goog.exportSymbol("Key.CANCEL", webdriver.Key.CANCEL);
-goog.exportSymbol("Key.HELP", webdriver.Key.HELP);
-goog.exportSymbol("Key.BACK_SPACE", webdriver.Key.BACK_SPACE);
-goog.exportSymbol("Key.TAB", webdriver.Key.TAB);
-goog.exportSymbol("Key.CLEAR", webdriver.Key.CLEAR);
-goog.exportSymbol("Key.RETURN", webdriver.Key.RETURN);
-goog.exportSymbol("Key.ENTER", webdriver.Key.ENTER);
-goog.exportSymbol("Key.SHIFT", webdriver.Key.SHIFT);
-goog.exportSymbol("Key.CONTROL", webdriver.Key.CONTROL);
-goog.exportSymbol("Key.ALT", webdriver.Key.ALT);
-goog.exportSymbol("Key.PAUSE", webdriver.Key.PAUSE);
-goog.exportSymbol("Key.ESCAPE", webdriver.Key.ESCAPE);
-goog.exportSymbol("Key.SPACE", webdriver.Key.SPACE);
-goog.exportSymbol("Key.PAGE_UP", webdriver.Key.PAGE_UP);
-goog.exportSymbol("Key.PAGE_DOWN", webdriver.Key.PAGE_DOWN);
-goog.exportSymbol("Key.END", webdriver.Key.END);
-goog.exportSymbol("Key.HOME", webdriver.Key.HOME);
-goog.exportSymbol("Key.ARROW_LEFT", webdriver.Key.ARROW_LEFT);
-goog.exportSymbol("Key.LEFT", webdriver.Key.LEFT);
-goog.exportSymbol("Key.ARROW_UP", webdriver.Key.ARROW_UP);
-goog.exportSymbol("Key.UP", webdriver.Key.UP);
-goog.exportSymbol("Key.ARROW_RIGHT", webdriver.Key.ARROW_RIGHT);
-goog.exportSymbol("Key.RIGHT", webdriver.Key.RIGHT);
-goog.exportSymbol("Key.ARROW_DOWN", webdriver.Key.ARROW_DOWN);
-goog.exportSymbol("Key.DOWN", webdriver.Key.DOWN);
-goog.exportSymbol("Key.INSERT", webdriver.Key.INSERT);
-goog.exportSymbol("Key.DELETE", webdriver.Key.DELETE);
-goog.exportSymbol("Key.SEMICOLON", webdriver.Key.SEMICOLON);
-goog.exportSymbol("Key.EQUALS", webdriver.Key.EQUALS);
-goog.exportSymbol("Key.NUMPAD0", webdriver.Key.NUMPAD0);
-goog.exportSymbol("Key.NUMPAD1", webdriver.Key.NUMPAD1);
-goog.exportSymbol("Key.NUMPAD2", webdriver.Key.NUMPAD2);
-goog.exportSymbol("Key.NUMPAD3", webdriver.Key.NUMPAD3);
-goog.exportSymbol("Key.NUMPAD4", webdriver.Key.NUMPAD4);
-goog.exportSymbol("Key.NUMPAD5", webdriver.Key.NUMPAD5);
-goog.exportSymbol("Key.NUMPAD6", webdriver.Key.NUMPAD6);
-goog.exportSymbol("Key.NUMPAD7", webdriver.Key.NUMPAD7);
-goog.exportSymbol("Key.NUMPAD8", webdriver.Key.NUMPAD8);
-goog.exportSymbol("Key.NUMPAD9", webdriver.Key.NUMPAD9);
-goog.exportSymbol("Key.MULTIPLY", webdriver.Key.MULTIPLY);
-goog.exportSymbol("Key.ADD", webdriver.Key.ADD);
-goog.exportSymbol("Key.SEPARATOR", webdriver.Key.SEPARATOR);
-goog.exportSymbol("Key.SUBTRACT", webdriver.Key.SUBTRACT);
-goog.exportSymbol("Key.DECIMAL", webdriver.Key.DECIMAL);
-goog.exportSymbol("Key.DIVIDE", webdriver.Key.DIVIDE);
-goog.exportSymbol("Key.F1", webdriver.Key.F1);
-goog.exportSymbol("Key.F2", webdriver.Key.F2);
-goog.exportSymbol("Key.F3", webdriver.Key.F3);
-goog.exportSymbol("Key.F4", webdriver.Key.F4);
-goog.exportSymbol("Key.F5", webdriver.Key.F5);
-goog.exportSymbol("Key.F6", webdriver.Key.F6);
-goog.exportSymbol("Key.F7", webdriver.Key.F7);
-goog.exportSymbol("Key.F8", webdriver.Key.F8);
-goog.exportSymbol("Key.F9", webdriver.Key.F9);
-goog.exportSymbol("Key.F10", webdriver.Key.F10);
-goog.exportSymbol("Key.F11", webdriver.Key.F11);
-goog.exportSymbol("Key.F12", webdriver.Key.F12);
-goog.exportSymbol("Key.COMMAND", webdriver.Key.COMMAND);
-goog.exportSymbol("Key.META", webdriver.Key.META);
-goog.exportSymbol("WebDriver", webdriver.WebDriver);
-goog.exportProperty(webdriver.WebDriver, "attachToSession", webdriver.WebDriver.attachToSession);
-goog.exportProperty(webdriver.WebDriver, "createSession", webdriver.WebDriver.createSession);
-goog.exportProperty(webdriver.WebDriver.prototype, "getSession", webdriver.WebDriver.prototype.getSession);
-goog.exportProperty(webdriver.WebDriver.prototype, "getCapability", webdriver.WebDriver.prototype.getCapability);
-goog.exportProperty(webdriver.WebDriver.prototype, "quit", webdriver.WebDriver.prototype.quit);
-goog.exportProperty(webdriver.WebDriver.prototype, "executeScript", webdriver.WebDriver.prototype.executeScript);
-goog.exportProperty(webdriver.WebDriver.prototype, "executeAsyncScript", webdriver.WebDriver.prototype.executeAsyncScript);
-goog.exportProperty(webdriver.WebDriver.prototype, "call", webdriver.WebDriver.prototype.call);
-goog.exportProperty(webdriver.WebDriver.prototype, "wait", webdriver.WebDriver.prototype.wait);
-goog.exportProperty(webdriver.WebDriver.prototype, "sleep", webdriver.WebDriver.prototype.sleep);
-goog.exportProperty(webdriver.WebDriver.prototype, "getWindowHandle", webdriver.WebDriver.prototype.getWindowHandle);
-goog.exportProperty(webdriver.WebDriver.prototype, "getAllWindowHandles", webdriver.WebDriver.prototype.getAllWindowHandles);
-goog.exportProperty(webdriver.WebDriver.prototype, "getPageSource", webdriver.WebDriver.prototype.getPageSource);
-goog.exportProperty(webdriver.WebDriver.prototype, "close", webdriver.WebDriver.prototype.close);
-goog.exportProperty(webdriver.WebDriver.prototype, "get", webdriver.WebDriver.prototype.get);
-goog.exportProperty(webdriver.WebDriver.prototype, "getCurrentUrl", webdriver.WebDriver.prototype.getCurrentUrl);
-goog.exportProperty(webdriver.WebDriver.prototype, "getTitle", webdriver.WebDriver.prototype.getTitle);
-goog.exportProperty(webdriver.WebDriver.prototype, "findElement", webdriver.WebDriver.prototype.findElement);
-goog.exportProperty(webdriver.WebDriver.prototype, "isElementPresent", webdriver.WebDriver.prototype.isElementPresent);
-goog.exportProperty(webdriver.WebDriver.prototype, "findElements", webdriver.WebDriver.prototype.findElements);
-goog.exportProperty(webdriver.WebDriver.prototype, "takeScreenshot", webdriver.WebDriver.prototype.takeScreenshot);
-goog.exportProperty(webdriver.WebDriver.prototype, "manage", webdriver.WebDriver.prototype.manage);
-goog.exportProperty(webdriver.WebDriver.prototype, "navigate", webdriver.WebDriver.prototype.navigate);
-goog.exportProperty(webdriver.WebDriver.prototype, "switchTo", webdriver.WebDriver.prototype.switchTo);
-goog.exportProperty(webdriver.WebDriver.Navigation.prototype, "to", webdriver.WebDriver.Navigation.prototype.to);
-goog.exportProperty(webdriver.WebDriver.Navigation.prototype, "back", webdriver.WebDriver.Navigation.prototype.back);
-goog.exportProperty(webdriver.WebDriver.Navigation.prototype, "forward", webdriver.WebDriver.Navigation.prototype.forward);
-goog.exportProperty(webdriver.WebDriver.Navigation.prototype, "refresh", webdriver.WebDriver.Navigation.prototype.refresh);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "addCookie", webdriver.WebDriver.Options.prototype.addCookie);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "deleteAllCookies", webdriver.WebDriver.Options.prototype.deleteAllCookies);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "deleteCookie", webdriver.WebDriver.Options.prototype.deleteCookie);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "getCookies", webdriver.WebDriver.Options.prototype.getCookies);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "getCookie", webdriver.WebDriver.Options.prototype.getCookie);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "timeouts", webdriver.WebDriver.Options.prototype.timeouts);
-goog.exportProperty(webdriver.WebDriver.Options.prototype, "window", webdriver.WebDriver.Options.prototype.window);
-goog.exportProperty(webdriver.WebDriver.Timeouts.prototype, "implicitlyWait", webdriver.WebDriver.Timeouts.prototype.implicitlyWait);
-goog.exportProperty(webdriver.WebDriver.Timeouts.prototype, "setScriptTimeout", webdriver.WebDriver.Timeouts.prototype.setScriptTimeout);
-goog.exportProperty(webdriver.WebDriver.TargetLocator.prototype, "activeElement", webdriver.WebDriver.TargetLocator.prototype.activeElement);
-goog.exportProperty(webdriver.WebDriver.TargetLocator.prototype, "defaultContent", webdriver.WebDriver.TargetLocator.prototype.defaultContent);
-goog.exportProperty(webdriver.WebDriver.TargetLocator.prototype, "frame", webdriver.WebDriver.TargetLocator.prototype.frame);
-goog.exportProperty(webdriver.WebDriver.TargetLocator.prototype, "window", webdriver.WebDriver.TargetLocator.prototype.window);
-goog.exportProperty(webdriver.WebDriver.Window.prototype, "getPosition", webdriver.WebDriver.Window.prototype.getPosition);
-goog.exportProperty(webdriver.WebDriver.Window.prototype, "setPosition", webdriver.WebDriver.Window.prototype.setPosition);
-goog.exportProperty(webdriver.WebDriver.Window.prototype, "getSize", webdriver.WebDriver.Window.prototype.getSize);
-goog.exportProperty(webdriver.WebDriver.Window.prototype, "setSize", webdriver.WebDriver.Window.prototype.setSize);
-goog.exportSymbol("WebElement", webdriver.WebElement);
-goog.exportProperty(webdriver.WebElement.prototype, "getDriver", webdriver.WebElement.prototype.getDriver);
-goog.exportProperty(webdriver.WebElement.prototype, "findElement", webdriver.WebElement.prototype.findElement);
-goog.exportProperty(webdriver.WebElement.prototype, "isElementPresent", webdriver.WebElement.prototype.isElementPresent);
-goog.exportProperty(webdriver.WebElement.prototype, "findElements", webdriver.WebElement.prototype.findElements);
-goog.exportProperty(webdriver.WebElement.prototype, "click", webdriver.WebElement.prototype.click);
-goog.exportProperty(webdriver.WebElement.prototype, "sendKeys", webdriver.WebElement.prototype.sendKeys);
-goog.exportProperty(webdriver.WebElement.prototype, "getTagName", webdriver.WebElement.prototype.getTagName);
-goog.exportProperty(webdriver.WebElement.prototype, "getCssValue", webdriver.WebElement.prototype.getCssValue);
-goog.exportProperty(webdriver.WebElement.prototype, "getAttribute", webdriver.WebElement.prototype.getAttribute);
-goog.exportProperty(webdriver.WebElement.prototype, "getText", webdriver.WebElement.prototype.getText);
-goog.exportProperty(webdriver.WebElement.prototype, "getSize", webdriver.WebElement.prototype.getSize);
-goog.exportProperty(webdriver.WebElement.prototype, "getLocation", webdriver.WebElement.prototype.getLocation);
-goog.exportProperty(webdriver.WebElement.prototype, "isEnabled", webdriver.WebElement.prototype.isEnabled);
-goog.exportProperty(webdriver.WebElement.prototype, "isSelected", webdriver.WebElement.prototype.isSelected);
-goog.exportProperty(webdriver.WebElement.prototype, "submit", webdriver.WebElement.prototype.submit);
-goog.exportProperty(webdriver.WebElement.prototype, "clear", webdriver.WebElement.prototype.clear);
-goog.exportProperty(webdriver.WebElement.prototype, "isDisplayed", webdriver.WebElement.prototype.isDisplayed);
-goog.exportProperty(webdriver.WebElement.prototype, "getOuterHtml", webdriver.WebElement.prototype.getOuterHtml);
-goog.exportProperty(webdriver.WebElement.prototype, "getInnerHtml", webdriver.WebElement.prototype.getInnerHtml);
-goog.exportSymbol("Session", webdriver.Session);
-goog.exportProperty(webdriver.Session.prototype, "getId", webdriver.Session.prototype.getId);
-goog.exportProperty(webdriver.Session.prototype, "getCapabilities", webdriver.Session.prototype.getCapabilities);
-goog.exportProperty(webdriver.Session.prototype, "getCapability", webdriver.Session.prototype.getCapability);
-goog.exportSymbol("http.CorsClient", webdriver.http.CorsClient);
-goog.exportSymbol("http.Executor", webdriver.http.Executor);
-goog.exportSymbol("node.toSource", webdriver.node.toSource);
-goog.exportSymbol("node.HttpClient", webdriver.node.HttpClient);
-goog.exportSymbol("process.isNative", webdriver.process.isNative);
-goog.exportSymbol("process.getEnv", webdriver.process.getEnv);
-goog.exportSymbol("process.setEnv", webdriver.process.setEnv);
-goog.exportSymbol("promise.isPromise", webdriver.promise.isPromise);
-goog.exportSymbol("promise.delayed", webdriver.promise.delayed);
-goog.exportSymbol("promise.resolved", webdriver.promise.resolved);
-goog.exportSymbol("promise.rejected", webdriver.promise.rejected);
-goog.exportSymbol("promise.checkedNodeCall", webdriver.promise.checkedNodeCall);
-goog.exportSymbol("promise.when", webdriver.promise.when);
-goog.exportSymbol("promise.asap", webdriver.promise.asap);
-goog.exportSymbol("promise.fullyResolved", webdriver.promise.fullyResolved);
-goog.exportSymbol("promise.Application.getInstance", webdriver.promise.Application.getInstance);
-goog.exportSymbol("promise.Application.EventType.IDLE", webdriver.promise.Application.EventType.IDLE);
-goog.exportSymbol("promise.Application.EventType.SCHEDULE_TASK", webdriver.promise.Application.EventType.SCHEDULE_TASK);
-goog.exportSymbol("promise.Application.EventType.UNCAUGHT_EXCEPTION", webdriver.promise.Application.EventType.UNCAUGHT_EXCEPTION);
-goog.exportProperty(webdriver.promise.Application.prototype, "schedule", webdriver.promise.Application.prototype.schedule);
-goog.exportProperty(webdriver.promise.Application.prototype, "scheduleTimeout", webdriver.promise.Application.prototype.scheduleTimeout);
-goog.exportProperty(webdriver.promise.Application.prototype, "scheduleWait", webdriver.promise.Application.prototype.scheduleWait);
-goog.exportSymbol("promise.Promise", webdriver.promise.Promise);
-goog.exportSymbol("promise.Promise.prototype.cancel", webdriver.promise.Promise.prototype.cancel);
-goog.exportSymbol("promise.Promise.prototype.then", webdriver.promise.Promise.prototype.then);
-goog.exportSymbol("promise.Promise.prototype.addBoth", webdriver.promise.Promise.prototype.addBoth);
-goog.exportSymbol("promise.Promise.prototype.addCallback", webdriver.promise.Promise.prototype.addCallback);
-goog.exportSymbol("promise.Promise.prototype.addCallbacks", webdriver.promise.Promise.prototype.addCallbacks);
-goog.exportSymbol("promise.Promise.prototype.addErrback", webdriver.promise.Promise.prototype.addErrback);
-goog.exportSymbol("promise.Promise.prototype.isPending", webdriver.promise.Promise.prototype.isPending);
-goog.exportSymbol("promise.Deferred", webdriver.promise.Deferred);
-;for(var key in webdriver)this[key]=webdriver[key];delete this.webdriver;}).call(typeof exports==typeof {}&&exports===this?exports:this.webdriver=this.webdriver||{})
+exports.ActionSequence = webdriver.ActionSequence;
+exports.Builder = webdriver.Builder;
+exports.Button = webdriver.Button;
+exports.By = webdriver.Locator.Strategy;
+exports.Command = webdriver.Command;
+exports.CommandName = webdriver.CommandName;
+exports.Error = bot.Error;
+exports.ErrorCode = bot.ErrorCode;
+exports.EventEmitter = webdriver.EventEmitter;
+exports.Key = webdriver.Key;
+exports.WebDriver = webdriver.WebDriver;
+exports.WebElement = webdriver.WebElement;
+exports.Session = webdriver.Session;
+exports.http = {Executor:webdriver.http.Executor, Request:webdriver.http.Request, Response:webdriver.http.Response};
+webdriver.process.isNative() ? exports.node = {toSource:webdriver.node.toSource, HttpClient:webdriver.node.HttpClient} : (exports.http.CorsClient = webdriver.http.CorsClient, exports.http.XhrClient = webdriver.http.XhrClient);
+exports.response = bot.response;
+exports.process = {getEnv:webdriver.process.getEnv, setEnv:webdriver.process.setEnv};
+exports.promise = webdriver.promise;
+exports.stacktrace = webdriver.stacktrace;
+})(typeof exports===typeof {}&&exports===this?exports:this.webdriver=this.webdriver||{})
