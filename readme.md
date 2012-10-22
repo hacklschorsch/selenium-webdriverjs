@@ -19,13 +19,12 @@ See this small [UI testsuite](https://github.com/froh42/multi/blob/master/seleni
 
 ## Files
 
-* webdriver.js
-  * The compiled file from the Selenium2 guys. This is what you get when you run "./go webdriverjs" in the checked-out [Subversion repo of Selenium2](http://code.google.com/p/selenium/source/checkout).
-* selenium-src/
-  * This directory contains all the sources for the compiled file above.
-  * It's included because of the license texts (most of which have to be included when re-distributing) and documentation (which is stripped in the compiled version above, but can be a handy reference).
+* webdriver/*
+  * The compiled output from the Selenium2 guys. This is what you get when you run "./go //javascript/node:webdriver" in the checked-out [Subversion repo of Selenium2](http://code.google.com/p/selenium/source/checkout).
+* COPYING
+  * Symlink to Selenium WebdriverJS's Apache License
 * update.sh
-  * Updates the package: Pulls SeleniumHQ SVN trunk, compiles webdriver.js and updates the package.json version string.
+  * Updates the package: Pulls SeleniumHQ SVN trunk, compiles webdriver for node and updates the package.json version string.
 
 ## Issues
 
@@ -35,6 +34,5 @@ Anything relating to the fine code itself please see the [issue tracker at the G
 
 ## License
 
-I put my own work (the packaging) into public domain (or whatever very free license is compatible to the licenses of the actual code).
+I put my work (the mere packaging) in the public domain, or, failing this (in countries where this is not possible) publish it under the same license as the original code (Apache License).
 
-The code I have packaged has different licenses attached: Apache, MIT, BSD, maybe more; I included the source files, hoping to comply with all the "keep this license text in your copy" regulations.
