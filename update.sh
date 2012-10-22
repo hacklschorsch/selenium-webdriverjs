@@ -13,24 +13,27 @@ set -e
 
 # Set up directories
 install -d build
-mv selenium-src build/selenium-src.`date +'%F_%T'`
-install -d selenium-src/javascript/webdriver/
+mv webdriver build/webdriver.`date +'%F_%T'`
 
 # Fetch latest code from SeleniumHQ
 cd build
 svn checkout http://selenium.googlecode.com/svn/trunk
 cd trunk
+# svn revert --recursive .
 
 # The "real" build process:
-./go webdriverjs
+./go //javascript/node:webdriver
 # done.
 
-cp build/javascript/webdriver/webdriver.js ../../
-svn export --force javascript/webdriver/ ../../selenium-src/javascript/webdriver/
+cp -ar build/javascript/node/webdriver ../../
 
 # Add new version string to package.json:
 UPSTREAM_REV=$(svn info | grep '^Revision:' | sed 's/[^0-9]//g')
 sed -i "s/\([0-9]\)\.\([0-9]\)\.\([0-9]\)-r[0-9]\+/\1.\2.\3-r${UPSTREAM_REV}/" ../../package.json
+
+
+# set -e makes this script fail early if any operation fails, so if we're here:
+echo Update successful.
 
 # That should be it, EOT.
 
