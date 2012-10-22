@@ -19,7 +19,6 @@
 	"url": "git@github.com:hacklschorsch/selenium-webdriverjs"
     },
     "scripts": {
-	"test": "echo -n 'Quick syntax check using node: ' ; node webdriver.js && echo OK.",
-	"pull": "svn export --force http://selenium.googlecode.com/svn/trunk/javascript/webdriver selenium-src/javascript/webdriver/"
+	"test": "echo -n 'Quick syntax check using node: ' ; node webdriver/index.js && echo OK."
     }
 }
