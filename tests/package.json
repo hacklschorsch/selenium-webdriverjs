@@ -1,0 +1,14 @@
+{
+  "name": "selenium-webdriverjs-tests",
+  "version": "0.0.1",
+  "author": {
+      "name": "Florian Sesser",
+      "email": "fs@it-agenten.com",
+      "web": "http://blog.it-agenten.com/author/florian-sesser/"
+  },
+
+  "Dependencies": {
+    "selenium-webdriverjs": "latest",
+    "mocha": "1.2.x"
+  }
+}
