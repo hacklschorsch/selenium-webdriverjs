@@ -1,5 +1,7 @@
 # selenium-webdriverjs
 
+[![Build Status](https://travis-ci.org/[hacklschorsch]/[selenium-webdriverjs].png)](https://travis-ci.org/[hacklschorsch]/[selenium-webdriverjs])
+
 This is an [npm](http://npmjs.org/) package of a JavaScript binding for [Selenium2 (AKA. WebDriver)](http://seleniumhq.org/projects/webdriver/) from [SeleniumHQ](http://seleniumhq.org/) (see http://code.google.com/p/selenium/wiki/WebDriverJs).
 
 Of the [different](https://github.com/admc/wd/) [available](https://github.com/Camme/webdriverjs/) [options](https://github.com/LearnBoost/soda) to drive Selenium2 from node.js I liked that adapter the most. Unfortunately, there was no npm package for it. This is what I am trying to solve.
