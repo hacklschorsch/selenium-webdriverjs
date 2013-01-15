@@ -1,6 +1,6 @@
 # selenium-webdriverjs
 
-[![Build Status](https://travis-ci.org/[hacklschorsch]/[selenium-webdriverjs].png)](https://travis-ci.org/[hacklschorsch]/[selenium-webdriverjs])
+[![Build Status](https://travis-ci.org/hacklschorsch/selenium-webdriverjs.png)](https://travis-ci.org/hacklschorsch/selenium-webdriverjs)
 
 This is an [npm](http://npmjs.org/) package of a JavaScript binding for [Selenium2 (AKA. WebDriver)](http://seleniumhq.org/projects/webdriver/) from [SeleniumHQ](http://seleniumhq.org/) (see http://code.google.com/p/selenium/wiki/WebDriverJs).
 
