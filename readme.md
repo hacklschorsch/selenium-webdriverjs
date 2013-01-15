@@ -28,7 +28,7 @@ See this small [UI testsuite](https://github.com/froh42/multi/blob/master/seleni
 * update.sh
   * Updates the package: Pulls SeleniumHQ SVN trunk, compiles webdriver for node and updates the package.json version string.
 * tests/*
-  * Beginnings of a self-test suite, not working ATM, to later be integrated with TravisCI.
+  * Beginnings of a self-test suite. Integrated with TravisCI.
 
 ## Issues
 
