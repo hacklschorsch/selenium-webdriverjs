@@ -17,7 +17,7 @@ driver.get('http://www.google.com');
 driver.findElement(webdriver.By.name('q')).sendKeys('webdriver');
 driver.findElement(webdriver.By.name('btnG')).click();
 driver.getTitle().then(function(title) {
-  require('assert').equal('webdriver - Google Search', title);
+  require('assert').equal('Google', title);
 
 });
 
