@@ -21,12 +21,12 @@ See this small [UI testsuite](https://github.com/froh42/multi/blob/master/seleni
 
 ## Files
 
-* webdriver/*
-  * The compiled output from the Selenium2 guys. This is what you get when you run "./go //javascript/node:webdriver" in the checked-out [Subversion repo of Selenium2](http://code.google.com/p/selenium/source/checkout).
+* selenium-webdriver/*
+  * The compiled output from the Selenium2 guys. This is what you get when you run "./go //javascript/node:selenium-webdriver" in the checked-out [Subversion repo of Selenium2](http://code.google.com/p/selenium/source/checkout).
 * COPYING
   * Symlink to Selenium WebdriverJS's Apache License
 * update.sh
-  * Updates the package: Pulls SeleniumHQ SVN trunk, compiles webdriver for node and updates the package.json version string.
+  * Updates the package: Pulls SeleniumHQ GIT master, compiles selenium-webdriver for node and updates the package.json version string.
 * tests/*
   * Beginnings of a self-test suite. Integrated with TravisCI.
 
