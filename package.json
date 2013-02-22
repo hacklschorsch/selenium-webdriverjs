@@ -1,6 +1,6 @@
 {
     "name": "selenium-webdriverjs",
-    "version": "0.1.1-r18456",
+    "version": "0.1.2-1967-01-12",
     "main": "webdriver/index.js",
     "description": "WebdriverJS from SeleniumHQ SVN, compiled & packaged for npm",
     "keywords": [
