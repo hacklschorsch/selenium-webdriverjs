@@ -13,23 +13,28 @@ set -e
 
 # Set up directories
 install -d build
-mv webdriver build/webdriver.`date +'%F_%T'`
+mv selenium-webdriver build/selenium-webdriver.`date +'%F_%T'`
 
 # Fetch latest code from SeleniumHQ
 cd build
-svn checkout http://selenium.googlecode.com/svn/trunk
-cd trunk
+if [ -d master ]; then
+	cd master
+	git pull
+else
+	git clone http://selenium.googlecode.com/git/ master
+	cd master
+fi
 # svn revert --recursive .
 
 # The "real" build process:
-./go //javascript/node:webdriver
+./go //javascript/node:selenium-webdriver
 # done.
 
-cp -ar build/javascript/node/webdriver ../../
+cp -ar build/javascript/node/selenium-webdriver ../../
 
 # Add new version string to package.json:
-UPSTREAM_REV=$(svn info | grep '^Revision:' | sed 's/[^0-9]//g')
-sed -i "s/\([0-9]\)\.\([0-9]\)\.\([0-9]\)-r[0-9]\+/\1.\2.\3-r${UPSTREAM_REV}/" ../../package.json
+UPSTREAM_DATE=$(git log -1 --format='%ci' | awk '{print $1}')
+sed -i "s/\([0-9]\)\.\([0-9]\)\.\([0-9]\)-[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\+/\1.\2.\3-${UPSTREAM_DATE}/" ../../package.json
 
 
 # set -e makes this script fail early if any operation fails, so if we're here:
