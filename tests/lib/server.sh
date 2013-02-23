@@ -2,7 +2,7 @@
 
 ROOTDIR="$( cd "$( dirname "$0")" && pwd )"
 TMP=$ROOTDIR/tmp
-SELENIUM_VERSION=2.28.0
+SELENIUM_VERSION=2.30.0
 
 COMMAND=$1
 
