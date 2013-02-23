@@ -1,3 +1,5 @@
+UPDATE: Selenium HQ is now providing an official NPM package of its own, rendering this project obsolete. See https://npmjs.org/package/selenium-webdriver and https://code.google.com/p/selenium/wiki/WebDriverJs#Installing_from_NPM.
+
 # selenium-webdriverjs
 
 [![Build Status](https://travis-ci.org/hacklschorsch/selenium-webdriverjs.png)](https://travis-ci.org/hacklschorsch/selenium-webdriverjs)
