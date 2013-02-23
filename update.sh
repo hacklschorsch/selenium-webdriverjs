@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Scope: Update selenium-webdriverjs: Fetch SVN trunk & compile.
+# Scope: Update selenium-webdriverjs: Fetch latest upstream code & compile.
 # Usage: Call from selenium-webdriverjs root directory.
 # Notes: Written and tested on Ubuntu Linux.
-# Dependencies: JRE, svn, maybe GNU extensions to Unix tools (grep, sed, date)
+# Dependencies: JRE, git, maybe GNU extensions to Unix tools (grep, sed, date)
 # Author: Florian Sesser <fs@it-agenten.com>
 # Date: 2012-08-12
 
@@ -24,7 +24,6 @@ else
 	git clone http://selenium.googlecode.com/git/ master
 	cd master
 fi
-# svn revert --recursive .
 
 # The "real" build process:
 ./go //javascript/node:selenium-webdriver
