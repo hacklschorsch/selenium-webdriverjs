@@ -1005,7 +1005,7 @@ webdriver.WebDriver.Options.prototype.addCookie = function(name, value,
  */
 webdriver.WebDriver.Options.prototype.deleteAllCookies = function() {
   return this.driver_.schedule(
-      new webdriver.Command(webdriver.CommandName.ADD_COOKIE),
+      new webdriver.Command(webdriver.CommandName.DELETE_ALL_COOKIES),
       'WebDriver.manage().deleteAllCookies()');
 };
 
