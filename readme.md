@@ -19,7 +19,7 @@ You can use selenium-webdriverjs like this:
 
     client.get('http://github.com');
 
-See this small [UI testsuite](https://github.com/froh42/multi/blob/master/selenium/testsuite.js) where I used the [mocha test runner](http://visionmedia.github.com/mocha/) to run [Selenium2](http://seleniumhq.org/projects/webdriver/) tests.
+See this small [UI testsuite](https://github.com/froh42/multi/blob/master/selenium/testsuite.js) where I used the [mocha test runner](https://mochajs.org/) to run [Selenium2](http://seleniumhq.org/projects/webdriver/) tests.
 
 ## Files
 
